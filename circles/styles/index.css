@@ -135,26 +135,74 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: burlywood;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
-  align-content: flex-start;
-  align-items: center;
+  align-content: space-evenly;
   flex-wrap: wrap;
   height: 100%;
   width: 70%;
-  max-height: 900px;
+  max-height: 1200px;
   max-width: 1300px;
 }
 
 .container__circle {
+  margin: 10px;
   border-radius: 2%;
-  height: 220px;
-  width: 273px;
-  background-color: tomato;
+  height: 280px;
+  width: 290px;
+  background-color: rosybrown;
   display: flex;
+}
+
+/* INNER CIRCLES */
+
+.container__circle-inner {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(72, 93, 94);
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/* NUMBER 1 */
+
+.circle-1 {
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+/* NUMBER 2 */
+
+.circle-2 {
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  align-content: flex-start;
+}
+
+/* NUMBER 3 */
+
+.circle-3 {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+/* NUMBER 4 */
+
+.circle-4 {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* NUMBER 5 */
+
+.circle-5 {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
