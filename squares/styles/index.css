@@ -1,0 +1,221 @@
+/* RESET CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* RESET ENDS */
+
+/* STYLING */
+
+/* GENERAL */
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 90%;
+}
+
+.container__square {
+  height: 200px;
+  width: 528px;
+  background-color: tomato;
+  display: flex;
+}
+
+/* INNER SQUARES */
+
+.container__square-inner {
+  height: 80px;
+  width: 80px;
+  background-color: thistle;
+  margin: 20px;
+}
+
+.square-1 {
+  align-items: flex-end;
+}
+
+.square-2 {
+  align-items: center;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.left2,
+.middle2,
+.right2 {
+  height: 100px;
+}
+
+.square-3 {
+  align-items: center;
+  justify-content: end;
+}
+
+.square-4 {
+  justify-content: space-between;
+}
+
+.right4 {
+  align-self: flex-end;
+}
+
+.square-5 {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left5,
+.right5 {
+  height: 120px;
+}
+
+.left5,
+.middle5,
+.right5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.square-6 {
+  align-items: center;
+  justify-content: center;
+}
+
+.middle6 {
+  flex-grow: 0.5;
+}
